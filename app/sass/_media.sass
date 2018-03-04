@@ -1,0 +1,144 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+
+	.menu .nav a 
+		font-size: 2.4vw
+		margin: 0 1.5vw
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+	.menu .nav a 
+		margin: 0 1.2vw
+
+@media only screen and (max-width : 850px)
+	.menu .nav a 
+		font-size: 2.6vw
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+
+	.header p 
+	    font-size: 28px
+
+	.menu 
+		.nav 
+			li 
+				border: none
+				border-radius: 15px
+				box-shadow: inset 0px -2px 9px 0px $lightGray
+				display: block
+				margin: 3px 22px
+
+			a 
+				padding: 0
+				margin: 0
+				font-size: 24px
+				line-height: 1.8
+
+				&:hover,
+				&:active,
+				&:focus 
+					background: $lightGray
+					border-radius: 15px
+					color: $gray
+
+		.navbar 
+			padding: 3px 0
+
+
+	.content .flexWrap 
+		flex-direction: column
+
+		h1 
+			text-align: center
+			
+
+	.newsWrap, 
+	.aboutCompany 
+		max-width: 100%
+		padding: 20px 3%
+
+	.aboutCompany 
+		order: -1
+
+	.footerMenu 
+		display: none
+
+	.footer .flexWrap 
+		align-items: center
+
+@media only screen and (max-width : 530px)
+
+	.header 
+		padding: 10px 0
+
+		.flexWrap 
+			flex-direction: column
+			padding: 0
+
+			& div 
+				padding: 10px 0
+
+	.carousel-inner 
+		height: 44vh
+
+	.footer 
+		.flexWrap 
+			flex-direction: column
+
+		.author 
+			order: 1
+			max-width: 100%
+			margin-top: 21px
+
+		.companyName 
+			margin-top: 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+
+	.menu .nav a 
+
+		&:hover:after 
+			left: 0
+			right: 0
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+	.menu .nav a 
+		font-size: 30px
